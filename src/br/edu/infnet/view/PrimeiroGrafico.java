@@ -18,7 +18,7 @@ public class PrimeiroGrafico extends JFrame{
 	private static final long serialVersionUID = 1L;
 
 	public PrimeiroGrafico() {
-	      super( "Primeiro Grafico" ); 
+	      super( "Projeto de Bloco" ); 
 	      
 	    //Cria um dataSet para inserir os dados que serão passados para a criação do gráfico tipo Pie
 	      DefaultCategoryDataset ds = new DefaultCategoryDataset();
@@ -33,7 +33,7 @@ public class PrimeiroGrafico extends JFrame{
 	      ds.addValue(82.5, "maximo", "dia 6");
 	       
 	      //Cria um objeto JFreeChart passando os seguintes parametros
-	      JFreeChart grafico = ChartFactory.createLineChart("Meu Grafico", "Dia", 
+	      JFreeChart grafico = ChartFactory.createLineChart("MGLU3.SA", "Dia", 
 	    		    "Valor", ds, PlotOrientation.VERTICAL, true, true, false);
 	       
 	      this.add( new ChartPanel( grafico ) );
